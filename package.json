@@ -1,5 +1,5 @@
 {
-  "name": "@lwfjyjy/sidebar-tab-close",
+  "name": "@lwfjyjy/dsh-sidebar-tab-close",
   "version": "0.1.0",
   "description": "DSH 插件：在右侧边栏 tab 的右键菜单里追加「关闭左侧 / 关闭右侧 / 关闭其他 / 关闭全部」。",
   "type": "module",

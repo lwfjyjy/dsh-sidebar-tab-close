@@ -7,7 +7,7 @@
 //      逐个调用 ctx.sidebarRight.close(id)；系统会自动跳过不可关闭的（如唯一 guide）。
 //   3) 外观：注入一小段 CSS（dstc-item），照抄原生菜单项，避免依赖 dockkit 的哈希类名。
 window.__ModuleLoader__.load({
-  id: '@lwfjyjy/sidebar-tab-close',
+  id: '@lwfjyjy/dsh-sidebar-tab-close',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
