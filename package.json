@@ -1,0 +1,38 @@
+{
+  "name": "@lwfjyjy/sidebar-tab-close",
+  "version": "0.1.0",
+  "description": "DSH 插件：在右侧边栏 tab 的右键菜单里追加「关闭左侧 / 关闭右侧 / 关闭其他 / 关闭全部」。",
+  "type": "module",
+  "license": "MIT",
+  "author": "lwfjyjy",
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./client.js": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  }
+}
